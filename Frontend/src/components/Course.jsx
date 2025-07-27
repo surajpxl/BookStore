@@ -13,9 +13,10 @@ function Course() {
       } catch (error) {
         console.log(error);
       }
-    };
+    }; 
     getBook();
   }, []);
+  
   return (
     <>
       <div className=" max-w-screen-2xl container mx-auto md:px-20 px-4">
@@ -25,6 +26,7 @@ function Course() {
             <span className="text-pink-500"> Here! :)</span>
           </h1>
           <p className="mt-12">
+<<<<<<< HEAD
   Explore a world of knowledge with our curated collection of best-selling
   novels, timeless classics, and inspiring self-help books. From thrilling
   adventures and heartfelt romances to powerful motivational reads, we bring you
@@ -33,6 +35,10 @@ function Course() {
   everyone.
 </p>
 
+=======
+           "Our Book Store website offers a wide collection of books across various genres, making it easy for readers to discover their next favorite read. With a clean and user-friendly design, browsing and purchasing books is quick and convenient. Features like detailed book descriptions, search functionality, and category filters enhance the shopping experience. Whether you’re a casual reader or a book enthusiast, this platform brings the joy of reading right to your fingertips."
+          </p>
+>>>>>>> 64c1ef5ab7a4bef8cbbf90d6ffb453a2a2f6caf3
           <Link to="/">
             <button className="mt-6 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
               Back

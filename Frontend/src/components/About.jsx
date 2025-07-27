@@ -78,6 +78,8 @@ function About() {
               fostering a vibrant community that shares knowledge, ideas, and a
               passion for lifelong learning.
             </p>
+
+            
           </div>
         </div>
 
