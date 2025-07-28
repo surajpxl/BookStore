@@ -8,33 +8,29 @@ import userRoute from "./route/user.route.js";
 
 const app = express();
 
-// Enable CORS (important for frontend on Netlify)
 app.use(cors());
 app.use(express.json());
 
-// Load environment variables
 dotenv.config();
 
-// Use correct variable name
 const PORT = process.env.PORT || 4000;
-const URI = process.env.MONGO_URI;
+const URI = process.env.MongoDBURI;
 
-// Connect to MongoDB
-mongoose.connect(URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
-.then(() => console.log("Connected to MongoDB"))
-.catch((error) => console.log("MongoDB connection error:", error));
+// connect to mongoDB
+try {
+    mongoose.connect(URI, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    });
+    console.log("Connected to mongoDB");
+} catch (error) {
+    console.log("Error: ", error);
+}
 
-// Define routes
+// defining routes
 app.use("/book", bookRoute);
 app.use("/user", userRoute);
 
-// Start server
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
-});
-app.get("/", (req, res) => {
-  res.send("Backend is working!");
 });
