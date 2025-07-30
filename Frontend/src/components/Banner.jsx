@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import banner from "../../public/Banner.png";
+import banner from "../../public/banner.webp";
 
 function Banner() {
   const [email, setEmail] = useState("");

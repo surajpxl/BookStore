@@ -43,7 +43,7 @@ function Navbar() {
         <a href="/">Home</a>
       </li>
       <li>
-        <a href="/course">Course</a>
+        <a href="/course">Books</a>
       </li>
       <li>
         <Link to="/contact" className="hover:text-pink-500">Contact</Link>

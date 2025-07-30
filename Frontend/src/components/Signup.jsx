@@ -25,10 +25,11 @@ function Signup() {
       .then((res) => {
         console.log(res.data);
         if (res.data) {
-          toast.success("Signup Successfully");
-          navigate(from, { replace: true });
+       toast.success("Signup successful. Please login.");
+navigate("/"); // Or open login modal if you're using a modal
+
+localStorage.setItem("Users", JSON.stringify(res.data.user));
         }
-        localStorage.setItem("Users", JSON.stringify(res.data.user));
       })
       .catch((err) => {
         if (err.response) {
