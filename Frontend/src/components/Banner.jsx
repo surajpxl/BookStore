@@ -4,16 +4,24 @@ import banner from "../../public/banner7.png";
 function Banner() {
   const [email, setEmail] = useState("");
 
-  const handleGetStarted = () => {
-    if (!email) {
-      alert("Please enter your email address.");
-      return;
-    }
+ const handleGetStarted = () => {
+  if (!email) {
+    alert("Please enter your email address.");
+    return;
+  }
 
-    // Here you can send email to backend / EmailJS
-    alert(`Thank you for joining! We'll contact you at ${email}`);
-    setEmail(""); // clear input after submit
-  };
+  // Validate email format using regex
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  // If valid, send email or show success message
+  alert(`Thanks for subscribing! You'll now receive updates and offers in your inbox:  ${email}`);
+  setEmail(""); // clear input after submit
+};
+
 
   return (
     <div className="max-w-screen-2xl bg-gray-800 container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10">
