@@ -149,14 +149,16 @@ function Navbar() {
           </label>
 
           {/* Cart Icon */}
-          <div className="relative cursor-pointer px-2">
-            <FaShoppingCart size={24} />
-            {cartItems.length > 0 && (
-              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 py-0.5 rounded-full">
-                {cartItems.length}
-              </span>
-            )}
-          </div>
+          <div className="relative cursor-pointer">
+      <Link to="/cart">
+        <FaShoppingCart size={24} />
+        {cartItems.length > 0 && (
+          <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 py-0.5 rounded-full">
+            {cartItems.length}
+          </span>
+        )}
+      </Link>
+    </div>
 
           {/* Login/Logout */}
           {authUser ? (
