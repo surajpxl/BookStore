@@ -4,6 +4,8 @@ import Banner from "../components/Banner";
 import Freebook from "../components/Freebook";
 import Footer from "../components/Footer";
 import BookDiscountBanner from "../components/BookDiscountBanner";
+import Categories from "../components/Categories";
+import NewArrivals from "../components/NewArrivals";
 
 function Home() {
   return (
@@ -12,6 +14,8 @@ function Home() {
       <Banner />
       <BookDiscountBanner/>
       <Freebook />
+      <Categories/>
+      <NewArrivals/>
       <Footer />
     </>
   );

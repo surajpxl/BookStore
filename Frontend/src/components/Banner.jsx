@@ -4,49 +4,47 @@ import banner from "../../public/banner7.png";
 function Banner() {
   const [email, setEmail] = useState("");
 
- const handleGetStarted = () => {
-  if (!email) {
-    alert("Please enter your email address.");
-    return;
-  }
+  const handleGetStarted = () => {
+    if (!email) {
+      alert("Please enter your email address.");
+      return;
+    }
 
-  // Validate email format using regex
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
-    alert("Please enter a valid email address.");
-    return;
-  }
+    // Validate email format using regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
 
-  // If valid, send email or show success message
-  alert(`Thanks for subscribing! You'll now receive updates and offers in your inbox:  ${email}`);
-  setEmail(""); // clear input after submit
-};
-
+    // If valid, send email or show success message
+    alert(`Thanks for subscribing! You'll now receive updates and offers in your inbox:  ${email}`);
+    setEmail(""); // clear input after submit
+  };
 
   return (
-    <div className="max-w-screen-2xl bg-gray-800 container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10">
+    <div className="pb-10  max-w-screen-2xl bg-gray-800 container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10">
       {/* Left Section */}
       <div className="w-full order-2 md:order-1 md:w-1/2 mt-12 md:mt-36">
-        <div className="space-y-8">
-          <h1 className="text-2xl md:text-4xl font-bold">
-            Hello, welcome here to learn something{" "}
-            <span className="text-pink-500">new everyday!!!</span>
+        <div className="space-y-6">
+          {/* Tagline */}
+          <p className="uppercase text-xs md:text-sm tracking-wide text-pink-400">
+            Your reading journey starts here
+          </p>
+
+          {/* Heading */}
+          <h1 className="text-2xl md:text-4xl font-bold leading-snug">
+            Discover Your Next <span className="text-pink-500">Great Read</span> Today
           </h1>
 
-          {/* Email info */}
-          <p className="text-sm md:text-xl">
-            Reach out anytime at{" "}
-            <a
-              href="mailto:support@bookstore.com"
-              className="text-pink-500 font-semibold hover:underline"
-            >
-              support@bookstore.com
-            </a>{" "}
-            or join our newsletter below.
+          {/* Subheading */}
+          <p className="text-sm md:text-xl text-gray-200">
+            Explore thousands of books across every genre — from timeless classics to trending bestsellers.  
+            Join our community of readers and get exclusive updates, recommendations, and discounts straight to your inbox.
           </p>
 
           {/* Email Input */}
-          <label className="input input-bordered flex items-center gap-2">
+          <label className="input input-bordered flex items-center gap-2 mt-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -64,12 +62,22 @@ function Banner() {
               onChange={(e) => setEmail(e.target.value)}
             />
           </label>
-        </div>
 
-        {/* Button */}
-        <button onClick={handleGetStarted} className="btn mt-6 btn-secondary">
-          Get Started
-        </button>
+          {/* CTA Button */}
+          <button
+            onClick={handleGetStarted}
+            className="relative mt-6 px-6 py-2 font-semibold text-white 
+             bg-gradient-to-r from-pink-500 via-purple-500 to-pink-600
+             rounded-lg shadow-[0_4px_14px_rgba(236,72,153,0.4)] 
+             transition-all duration-300 
+             hover:scale-105 hover:shadow-[0_6px_20px_rgba(236,72,153,0.6)]
+             active:scale-95 overflow-hidden"
+          >
+            <span className="relative z-10">Join the Book Club</span>
+            <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-pink-400 via-purple-400 to-pink-500 
+                   blur-xl opacity-50 animate-pulse"></span>
+          </button>
+        </div>
       </div>
 
       {/* Right Section */}
