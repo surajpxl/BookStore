@@ -18,11 +18,11 @@ const BookDiscountBanner = () => {
           20% Off Select Books
         </h2>
         <button
-  onClick={() => alert("Sale is not started yet!")}
-  className="mt-4 bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition"
->
-  Shop Now
-</button>
+          onClick={() => alert("Sale is not started yet!")}
+          className="mt-4 bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition"
+        >
+          Shop Now
+        </button>
       </div>
     </div>
   );

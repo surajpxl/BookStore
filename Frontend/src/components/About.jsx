@@ -20,8 +20,8 @@ function About() {
       <div className="max-w-6xl mx-auto text-center">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-amber-500 mb-6">
-  About Our Bookstore
-</h2>
+          About Our Bookstore
+        </h2>
 
         {/* Intro */}
         <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-8">
@@ -36,7 +36,9 @@ function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 items-center">
           {/* Text */}
           <div className="text-left p-6 border rounded-xl shadow-md bg-white dark:bg-slate-800">
-            <h3 className="text-2xl font-semibold text-amber-500 mb-4">Our Story</h3>
+            <h3 className="text-2xl font-semibold text-amber-500 mb-4">
+              Our Story
+            </h3>
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
               Founded in 2024 by a group of passionate book enthusiasts, our
               bookstore started as a small community project to bring readers
@@ -51,41 +53,44 @@ function About() {
           {/* External Image */}
           <div className="flex justify-center">
             <img
-  src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-  alt="Bookstore interior"
-  className="rounded-xl shadow-md md:w-[500px] md:h-[320px] object-cover"
-/>
-
+              src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Bookstore interior"
+              className="rounded-xl shadow-md md:w-[500px] md:h-[320px] object-cover"
+            />
           </div>
         </div>
 
         {/* Mission & Vision */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 text-left">
           <div className="p-6 border rounded-xl shadow-md bg-white dark:bg-slate-800">
-            <h3 className="text-xl font-semibold text-amber-500 mb-3">Our Mission</h3>
+            <h3 className="text-xl font-semibold text-amber-500 mb-3">
+              Our Mission
+            </h3>
             <p className="text-gray-600 dark:text-gray-400">
               To connect readers with books that enrich their lives and broaden
               their horizons. We strive to make reading accessible to everyone
-              by offering curated selections, affordable prices, and personalized
-              recommendations.
+              by offering curated selections, affordable prices, and
+              personalized recommendations.
             </p>
           </div>
 
           <div className="p-6 border rounded-xl shadow-md bg-white dark:bg-slate-800">
-           <h3 className="text-xl font-semibold text-amber-500 mb-3">Our Vision</h3>
+            <h3 className="text-xl font-semibold text-amber-500 mb-3">
+              Our Vision
+            </h3>
             <p className="text-gray-600 dark:text-gray-400">
               To become the go-to destination for book lovers worldwide —
               fostering a vibrant community that shares knowledge, ideas, and a
               passion for lifelong learning.
             </p>
-
-            
           </div>
         </div>
 
         {/* Why Choose Us */}
         <div className="mt-16">
-          <h3 className="text-2xl font-semibold text-amber-500 mb-6">Why Choose Us?</h3>
+          <h3 className="text-2xl font-semibold text-amber-500 mb-6">
+            Why Choose Us?
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="p-6 border rounded-xl shadow-md bg-white dark:bg-slate-800">
               <h4 className="text-lg font-semibold mb-2">Wide Collection</h4>

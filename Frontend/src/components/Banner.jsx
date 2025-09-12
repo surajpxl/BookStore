@@ -18,7 +18,9 @@ function Banner() {
     }
 
     // If valid, send email or show success message
-    alert(`Thanks for subscribing! You'll now receive updates and offers in your inbox:  ${email}`);
+    alert(
+      `Thanks for subscribing! You'll now receive updates and offers in your inbox:  ${email}`
+    );
     setEmail(""); // clear input after submit
   };
 
@@ -34,13 +36,16 @@ function Banner() {
 
           {/* Heading */}
           <h1 className="text-2xl md:text-4xl font-bold leading-snug">
-            Discover Your Next <span className="text-pink-500">Great Read</span> Today
+            Discover Your Next <span className="text-pink-500">Great Read</span>{" "}
+            Today
           </h1>
 
           {/* Subheading */}
           <p className="text-sm md:text-xl text-gray-200">
-            Explore thousands of books across every genre — from timeless classics to trending bestsellers.  
-            Join our community of readers and get exclusive updates, recommendations, and discounts straight to your inbox.
+            Explore thousands of books across every genre — from timeless
+            classics to trending bestsellers. Join our community of readers and
+            get exclusive updates, recommendations, and discounts straight to
+            your inbox.
           </p>
 
           {/* Email Input */}
@@ -74,8 +79,10 @@ function Banner() {
              active:scale-95 overflow-hidden"
           >
             <span className="relative z-10">Join the Book Club</span>
-            <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-pink-400 via-purple-400 to-pink-500 
-                   blur-xl opacity-50 animate-pulse"></span>
+            <span
+              className="absolute inset-0 rounded-lg bg-gradient-to-r from-pink-400 via-purple-400 to-pink-500 
+                   blur-xl opacity-50 animate-pulse"
+            ></span>
           </button>
         </div>
       </div>
