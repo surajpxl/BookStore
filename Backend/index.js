@@ -32,6 +32,10 @@ const URI = process.env.MONGO_URI;
 app.use("/book", bookRoute);
 app.use("/user", userRoute);
 
+app.get("/", (req, res) => {
+  res.send("🚀 Bookstore API is running!");
+});
+ 
 app.listen(PORT, () => {
   console.log(`🚀 Server is listening on port ${PORT}`);
 });
